@@ -49,7 +49,10 @@ sample_training_list = [0,9] # Choose the combination for g-codes from different
 
 ##### Part 2: Simulated Annealing (Run this code after finishing running the code in Part 1) #####
 
-In "colearning_with_SA", 
+In "colearning_with_SA.py", the resutls will be generated as follows,
+
+![image](https://user-images.githubusercontent.com/105607708/168657194-5dafa078-4eed-4f98-975c-a6ca0998f241.png)
+
 
 ## Section 6.1 ##
 
