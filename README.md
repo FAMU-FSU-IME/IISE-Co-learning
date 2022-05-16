@@ -25,8 +25,9 @@ For the 95%-NCI of posterior common covariance. The file "MCMC_covariance_estima
 
 ![image](https://user-images.githubusercontent.com/105607708/168651711-422e97e7-2b02-4bb1-b140-4a34766af7c1.png)
 
-Autocorrelation
-![image](https://user-images.githubusercontent.com/105607708/168651752-342cc1a0-3680-4dab-8cba-8c14f1743396.png)
+Autocorrelation within 1000 lags 
+![image](https://user-images.githubusercontent.com/105607708/168652316-208be8b1-d52b-4e34-abc9-ed5a04c19ab7.png)
+
 
 ### Note: Change combination of the g-codes for the co-learning in the code is allowalbe, but the user must manully change the following parameters as well. Such as...
 
