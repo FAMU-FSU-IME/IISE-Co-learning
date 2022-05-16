@@ -34,10 +34,16 @@ Autocorrelation within 1000 lags
 
 In "MCMC_covariance_estimation.py", we have 26 differents g-codes from 4 printers example ,___ino120_1.csv (Taz6), xiao120.csv (Taz5), ___101ts.csv (Ender 1), ___101s.csv (Ender 2).
 
-Since the Taz 6 doesn't have p1, for the coding purpose, we manually created p1 for ___ino120 right ___ino120_1
+Since the Taz 6 doesn't have p1, for the coding purpose, we manually created p1 for ___ino120 --> ___ino120_1.
 
 However, in the paper each printer we include only 5 g-codes from TABLE 1 (paper) for each pritner. The index for the g-code will become:
 
+IISE paper conditions in Table 1 for each printer.
+
+0  3   5  6   8  Xiao (Taz 5)
+9  11  13 14 15  ino (Taz 6)
+16 17  18 19 20  Ender 1
+21 22  23 24 25  Ender 2
 
 
 
