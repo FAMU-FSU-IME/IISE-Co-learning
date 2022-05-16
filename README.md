@@ -53,6 +53,9 @@ In "colearning_with_SA.py", the resutls will be generated as follows,
 
 ![image](https://user-images.githubusercontent.com/105607708/168657937-0ba2ed04-4cd4-4f6d-b1c0-faa5de81484a.png)
 
+![image](https://user-images.githubusercontent.com/105607708/168658149-0294ad2c-b154-4294-91bb-d230bab4f720.png)
+
+
 ## Section 6.1 ##
 
 ## Section 6.2 ##
