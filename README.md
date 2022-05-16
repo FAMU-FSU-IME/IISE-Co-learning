@@ -99,8 +99,8 @@ Also, "printer_selection.py", are provided for presenting the results I attached
 
 
 "SA_EA_and_EA_EA.py" are provided for presenting the results I attached in Fig. 9 (paper). Please see the code below the comment in the code
-##=============================================================================
-##============================The comparison between SA + EA:GA and EA:GA + EA:GA==============================
-##=============================================================================
+##==================================================
+##=======The comparison between SA + EA:GA and EA:GA + EA:GA======
+##==================================================
 ![image](https://user-images.githubusercontent.com/105607708/168667466-089ee15a-b5e7-4243-9c36-d77fbdfeeb41.png)
 
