@@ -51,20 +51,42 @@ sample_training_list = [0,9] # Choose the combination for g-codes from different
 
 In "colearning_with_SA.py", the resutls for one target g-code (ino120 (Taz 6)) in co-learning and validated by the rest of non-selected four g-codes in TABLE 1 (paper) from ino120 (Taz 6) will be generated as follows,
 
+In the code:
+training_list = [0] #One g-code training for (ino120)Taz 6        
+test_list = [3,5,6,8] #The rest of non-selected testing g-codes in TABLE 1 for (ino120)Taz 6.  
+
 ![image](https://user-images.githubusercontent.com/105607708/168660075-e533aa74-505f-43fc-9286-53fc57aab438.png)
 
-Row 1:
+Row 1: The RMSEs validated by the rest of non-selected printer in single printer learning. 
 
-Row 2:
-3,4
+Row 2: The RMSEs validated by the rest of non-selected printer in co-learning proposed. 
 
-The RMSE reduction (%) through the iteration.
+3: Total RMSEs in single printer leanring. 4: Total RMSEs in co-leanring proposed. 5: RMSE reduction 6: The covariance we found so far. 
+
+The RMSE reduction (%) through the iteration as follows,
 
 ![image](https://user-images.githubusercontent.com/105607708/168660127-590b60fb-6da4-43af-9600-f6105e225517.png)
 
 
+In between-printer learning comparison, the code must be adjusted manually when the training g-code changes. For exmaple:
+
+training_list = [0]       
+test_list = [3,5,6,8] 
+
+training_list = [3]       
+test_list = [0,5,6,8] 
+
+training_list = [5]       
+test_list = [0,3,6,8] 
+
+"Ren_vs_proposed.py", are provided for presenting the results I attached in Fig. 7 (paper).
+
+![image](https://user-images.githubusercontent.com/105607708/168661481-34143a3a-3541-4d40-9546-8c632ad5a30c.png)
+
+For this results, user needs to include the g-code only from xiao120(Taz 5: one-gcode contained only) and ino120 (Taz 6: depends on the varying size) 
 
 
 ## Section 6.1 ##
 
 ## Section 6.2 ##
+
