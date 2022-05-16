@@ -101,7 +101,7 @@ Based the getting the results in Section 6.2. Two files need to be saved first (
 
 geneticalgorithm_inner: inner optimization for obataining the optimized covariance given a printer combination.
 
-**Note: For the comparison between Hybrid (EA+SA) and EA (only), the computational time in the inner opimitzation between two methods SA vs. EA should be the same or close per iteration. Depends on my CPU, the running time for SA is around 100 seconds. Therefore, geneticalgorithm_inner.py should be run around 100 sec per iteration as follows,
+### Note: For the comparison between Hybrid (EA+SA) and EA (only), the computational time in the inner opimitzation between two methods SA vs. EA should be the same or close per iteration. Depends on my CPU, the running time for SA is around 100 seconds. Therefore, geneticalgorithm_inner.py should be run around 100 sec per iteration as follows,
           start=timer()
           '
           '
@@ -109,7 +109,7 @@ geneticalgorithm_inner: inner optimization for obataining the optimized covarian
            u = timer()
             if((u-start)>100):
                 break
- **
+ ###
 
 
 geneticalgorithm.py: outer optimization for the printer selection
@@ -119,6 +119,7 @@ After saving the two EA files above, the MCMC_covariance_estimation and Simulate
 
 
 At the bottom of "SA_EA_and_EA_EA.py" are provided for presenting the results I attached in Fig. 9 (paper). Please see the code below the comment in the code
+
 ##==================================================
 
 ##=======The comparison between SA + EA:GA and EA:GA + EA:GA======
