@@ -49,11 +49,18 @@ sample_training_list = [0,9] # Choose the combination for g-codes from different
 
 ##### Part 2: Simulated Annealing (Run this code after finishing running the code in Part 1) #####
 
-In "colearning_with_SA.py", the resutls will be generated as follows,
+In "colearning_with_SA.py", the resutls for one target g-code (ino120 (Taz 6)) in co-learning and validated by the rest of non-selected four g-codes in TABLE 1 (paper) from ino120 (Taz 6) will be generated as follows,
 
 ![image](https://user-images.githubusercontent.com/105607708/168657937-0ba2ed04-4cd4-4f6d-b1c0-faa5de81484a.png)
 
-![image](https://user-images.githubusercontent.com/105607708/168658884-bd8f492c-eac6-4f59-80f4-922a5e883f90.png)
+Row 1:
+
+Row 2:
+3,4
+
+The RMSE reduction (%) through the iteration.
+
+![image](https://user-images.githubusercontent.com/105607708/168659299-8adf9aad-3b7d-4a7c-9c0b-a95d745af72e.png)
 
 
 
