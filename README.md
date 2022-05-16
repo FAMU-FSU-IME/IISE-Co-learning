@@ -69,17 +69,17 @@ The RMSE reduction (%) through the iteration as follows,
 ![image](https://user-images.githubusercontent.com/105607708/168660127-590b60fb-6da4-43af-9600-f6105e225517.png)
 
 
-In between-printer learning comparison, the code must be adjusted manually when the training g-code changes. For exmaple:
+### In between-printer learning comparison, the code must be adjusted manually when the training g-code changes. For exmaple:
 
-training_list = [0]       
-test_list = [3,5,6,8] 
+ training_list = [0]       
+ test_list = [3,5,6,8] 
 
-training_list = [3]       
-test_list = [0,5,6,8] 
+ training_list = [3]       
+ test_list = [0,5,6,8] 
 
-training_list = [5]       
-test_list = [0,3,6,8] 
-
+ training_list = [5]       
+ test_list = [0,3,6,8] 
+###
 
 Based on code, we randomly picked a number of of g-code-combinations in a certain size compared with the results obtained from prior study (Transfer learning (Ren. et al 2021)). Also, "Ren_vs_proposed.py", are provided for presenting the results I attached in Fig. 7 (paper). The covariance estimation (def cov_cal) from the prior stduy also attached in "MCMC_covariance_estimation.py"
 
