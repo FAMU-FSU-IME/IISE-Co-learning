@@ -20,7 +20,6 @@ def forward_pred(ltva_va):
 
   data_idx = 8 # Predict the index of the g-code you want.
   
-###
 
 ## Section 5 ##
 For the 95%-NCI of posterior common covariance. The file "MCMC_covariance_estimation.py" and "HPD.py" are attached under the folder called "Section 5: Case_study.zip". The running results will be like...
