@@ -1,5 +1,4 @@
-# IISE-Co-learning
-Two-stage optimization for solving co-learning problem.
+# IISE-Co-learning: Two-stage optimization for solving co-learning problem.
 
 # Section 5
 
