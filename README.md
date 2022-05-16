@@ -8,10 +8,7 @@ For the validation of the kinematics piecewise fucntion proposed by (Ren. et al 
 
 ### Note: ### Change different g-code in the code is allowalbe, but the user must manully change the following parameters as well. Such as...
 
-![image](https://user-images.githubusercontent.com/105607708/168646917-a5604c05-eb54-4fd9-af4d-e2c48168db10.png)
-In the code:
-
-training_list = [0,1,2,3,4,5,6,7] # index of the training sampels, I selected 8 samples for the training data.
+training_list = [0,1,2,3,4,5,6,7] # index of the training sampels, I selected 8 samples (0-7) for the training data, 8 for the prediction.
 
 thres_list =  [0.8, 0.8, 0.8, 0.75, 0.75, 0.82, 0.8, 0.75, 0.82] # is the the starting linewidth for p4 based on the index.
 
