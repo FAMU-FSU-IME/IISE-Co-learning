@@ -30,7 +30,7 @@ Autocorrelation within 1000 lags
 ![image](https://user-images.githubusercontent.com/105607708/168652316-208be8b1-d52b-4e34-abc9-ed5a04c19ab7.png)
 
 
-### Note: Change combination of g-codes for the co-learning in the code is allowalbe, but the user must manully change the following parameters in the code as well. Such as...
+### Note: Change the combination of g-codes for the co-learning in the code is allowalbe, but the user must manully change the following parameters in the code as well. Such as...
 
 ##### Part 1: MCMC for covariance estimation (Running this first, since the MCMC samples will be written in the newly created file called "newfilePath.csv") #####
 In "MCMC_covariance_estimation.py", we have 26 differents g-codes from 4 printers example ,___ino120_1.csv (Taz6), xiao120.csv (Taz5), ___101ts.csv (Ender 1), ___101s.csv (Ender 2).
@@ -87,6 +87,11 @@ Based on code, we randomly picked a number of of g-code-combinations in a certai
 
 
 ## Section 6.1 ##
+
+For the printer selection in Section 6.1, we 
+
+![image](https://user-images.githubusercontent.com/105607708/168665077-d3d1053b-e335-49cb-b8bd-a61e7467bf8f.png)
+
 
 ## Section 6.2 ##
 
