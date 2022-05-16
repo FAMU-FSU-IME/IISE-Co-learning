@@ -27,7 +27,7 @@ For the 95%-NCI of posterior common covariance. The file "MCMC_covariance_estima
 
 Autocorrelation within 1000 lags
 
-![image](https://user-images.githubusercontent.com/105607708/168652316-208be8b1-d52b-4e34-abc9-ed5a04c19ab7.png =250x250)
+![image](https://user-images.githubusercontent.com/105607708/168652316-208be8b1-d52b-4e34-abc9-ed5a04c19ab7.png)
 
 
 ### Note: Change combination of g-codes for the co-learning in the code is allowalbe, but the user must manully change the following parameters in the code as well. Such as...
@@ -53,7 +53,7 @@ In "colearning_with_SA.py", the resutls will be generated as follows,
 
 ![image](https://user-images.githubusercontent.com/105607708/168657937-0ba2ed04-4cd4-4f6d-b1c0-faa5de81484a.png)
 
-![github1](https://user-images.githubusercontent.com/105607708/168658255-91cf00ef-71e8-4a3f-9004-141007c99d77.png)
+![github1](https://user-images.githubusercontent.com/105607708/168658255-91cf00ef-71e8-4a3f-9004-141007c99d77.png =250x250)
 
 
 
