@@ -8,7 +8,6 @@ For the validation of the kinematics piecewise fucntion proposed by (Ren. et al 
 
 ### Note: Change different g-code in the code is allowalbe, but the user must manully change the following parameters in the code as well. Such as...
 
-###
 training_list = [0,1,2,3,4,5,6,7] # index of the training sampels, I selected 8 samples (0-7) for the training data, 8 for the prediction.
 
 thres_list =  [0.8, 0.8, 0.8, 0.75, 0.75, 0.82, 0.8, 0.75, 0.82] # is the the starting linewidth for p4 based on the index.
@@ -20,6 +19,7 @@ def forward_pred(ltva_va):
   pred_p2[pred_p2>=0.82] = 0.82 # change 0.82 to the corresponing threshold in thres_list.
 
   data_idx = 8 # Predict the index of the g-code you want.
+  
 ###
 
 ## Section 5 ##
@@ -72,7 +72,6 @@ The RMSE reduction (%) through the iteration as follows,
 
 In between-printer learning comparison, the code must be adjusted manually when the training g-code changes. For exmaple:
 
-###
 training_list = [0]       
 test_list = [3,5,6,8] 
 
@@ -81,7 +80,8 @@ test_list = [0,5,6,8]
 
 training_list = [5]       
 test_list = [0,3,6,8] 
-###
+
+
 Based on code, we randomly picked a number of of g-code-combinations in a certain size compared with the results obtained from prior study (Transfer learning (Ren. et al 2021)). Also, "Ren_vs_proposed.py", are provided for presenting the results I attached in Fig. 7 (paper). The covariance estimation (def cov_cal) from the prior stduy also attached in "MCMC_covariance_estimation.py"
 
 ![image](https://user-images.githubusercontent.com/105607708/168661481-34143a3a-3541-4d40-9546-8c632ad5a30c.png)
