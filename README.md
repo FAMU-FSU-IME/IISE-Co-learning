@@ -6,6 +6,8 @@ For the validation of the kinematics piecewise fucntion proposed by (Ren. et al 
 
 ![image](https://user-images.githubusercontent.com/105607708/168645847-e6ca692e-465c-4e8e-8e44-9c8cf2c755d9.png)
 
+###Note:### Change different g-code in the code is allowalbe, but the user must manully change the following parameters as well. Such as...
+
 
 
 
