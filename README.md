@@ -51,7 +51,7 @@ sample_training_list = [0,9] # Choose the combination for g-codes from different
 
 In "colearning_with_SA.py", the resutls for one target g-code (ino120 (Taz 6)) in co-learning and validated by the rest of non-selected four g-codes in TABLE 1 (paper) from ino120 (Taz 6) will be generated as follows,
 
-![image](https://user-images.githubusercontent.com/105607708/168657937-0ba2ed04-4cd4-4f6d-b1c0-faa5de81484a.png)
+![image](https://user-images.githubusercontent.com/105607708/168660075-e533aa74-505f-43fc-9286-53fc57aab438.png)
 
 Row 1:
 
@@ -60,7 +60,7 @@ Row 2:
 
 The RMSE reduction (%) through the iteration.
 
-![image](https://user-images.githubusercontent.com/105607708/168659299-8adf9aad-3b7d-4a7c-9c0b-a95d745af72e.png)
+![image](https://user-images.githubusercontent.com/105607708/168660127-590b60fb-6da4-43af-9600-f6105e225517.png)
 
 
 
