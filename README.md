@@ -129,7 +129,7 @@ A single run of "SA_EA_and_EA_EA.py" will generate the results as follows,
 
 Denotes sga = (EA+SA), gga = (EA+EA),
 
-The results show the selected printer combionations (1: selected, 0:non-selected) among 20 printers thorugh sga and gga. Also, the 
+The results show the selected printer combionations (1: selected, 0:non-selected) among 20 printers thorugh obj_var_sga and obj_var_gga. Also, the obj_func_sga and obj_func_gga show the RMSE reduction percentage compared to the single-printer learning. ### Note: Please ignore the negative sign and treat the output of obj_func_gga & obj_func_sga as postive values ###
 
 
 At the bottom of "SA_EA_and_EA_EA.py" are provided for presenting the results I attached in Fig. 9 (paper). Please see the code below the comment in the code
