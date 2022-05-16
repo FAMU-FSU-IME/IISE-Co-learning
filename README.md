@@ -120,7 +120,7 @@ geneticalgorithm.py: outer optimization for the printer selection
 After saving the two EA files above, the MCMC_covariance_estimation and Simulated annealing are integrated as "SA_EA_and_EA_EA.py" to present the two-stage optimization for the search process of the co-learning problem. 
 
 
-By running "SA_EA_and_EA_EA.py",  the resutls for one target g-code (ino120 (Taz 6)) in co-learning and validated by the rest of non-selected four g-codes in TABLE 1 (paper) from ino120 (Taz 6) will be generated. Users have to train one of samples from  [0, 3, 5, 6, 8] in ino120 (Taz 6) and validated by the rest of non-selected. Therefore, 20 RMSEs will be manually collected for the Hybrid-metaheuristic and EA only.
+By running "SA_EA_and_EA_EA.py",  the resutls for one target g-code (ino120 (Taz 6)) in co-learning and validated by the rest of non-selected four g-codes in TABLE 1 (paper) from ino120 (Taz 6) will be generated. Users have to train one of samples from  [0, 3, 5, 6, 8] in ino120 (Taz 6) and validated by the rest of non-selected. Therefore, 20 RMSEs will be manually collected for the Hybrid-metaheuristic and EA only for Fig. 9 (paper).
 
 
 A single run of "SA_EA_and_EA_EA.py" will generate the results as follows,
@@ -129,7 +129,9 @@ A single run of "SA_EA_and_EA_EA.py" will generate the results as follows,
 
 Denotes sga = (EA+SA), gga = (EA+EA),
 
-The results show the selected printer combionations (1: selected, 0:non-selected) among 20 printers thorugh obj_var_sga and obj_var_gga. Also, the obj_func_sga and obj_func_gga show the RMSE reduction percentage compared to the single-printer learning. ### Note: Please ignore the negative sign and treat the output of obj_func_gga & obj_func_sga as postive values ###
+The results show the selected printer combionations (1: selected, 0:non-selected) among 20 printers thorugh obj_var_sga and obj_var_gga. Also, the obj_func_sga and obj_func_gga show the RMSE reduction percentage compared to the single-printer learning. 
+
+### Note: Please ignore the negative sign and treat the output of obj_func_gga & obj_func_sga as postive values ###
 
 
 At the bottom of "SA_EA_and_EA_EA.py" are provided for presenting the results I attached in Fig. 9 (paper). Please see the code below the comment in the code
