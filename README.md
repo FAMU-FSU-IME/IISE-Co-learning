@@ -25,7 +25,8 @@ For the 95%-NCI of posterior common covariance. The file "MCMC_covariance_estima
 
 ![image](https://user-images.githubusercontent.com/105607708/168651711-422e97e7-2b02-4bb1-b140-4a34766af7c1.png)
 
-Autocorrelation within 1000 lags 
+Autocorrelation within 1000 lags
+
 ![image](https://user-images.githubusercontent.com/105607708/168652316-208be8b1-d52b-4e34-abc9-ed5a04c19ab7.png)
 
 
