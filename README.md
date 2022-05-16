@@ -32,6 +32,14 @@ Autocorrelation within 1000 lags
 
 ### Note: Change combination of g-codes for the co-learning in the code is allowalbe, but the user must manully change the following parameters as well. Such as...
 
+In "MCMC_covariance_estimation.py", we have 26 differents g-codes from 4 printers example ,___ino120_1.csv (Taz6), xiao120.csv (Taz5), ___101ts.csv (Ender 1), ___101s.csv (Ender 2).
+
+Since the Taz 6 doesn't have p1, for the coding purpose, we manually created p1 for ___ino120 right ___ino120_1
+
+However, in the paper each printer we include only 5 g-codes from TABLE 1 (paper) for each pritner. The index for the g-code will become:
+
+
+
 
 ## Section 6.1 ##
 
