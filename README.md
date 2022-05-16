@@ -1,6 +1,6 @@
 # Two-stage optimization for solving co-learning problem. #
 
-## Section 5 ##
+## Section 4: The validation for the kinematic-piecewise model in Eqn.(1). 
 
 For the validation of the kinematics piecewise fucntion proposed by (Ren. et al 2021). The file "linewidth estimation.py" is attached under the folder called "piecewise model (Ren 2021).zip". All the linewidth_data is provided in "Linewidth_Data.zip". The running results will be like...
 
@@ -19,6 +19,17 @@ def forward_pred(ltva_va):
   pred_p2[pred_p2>=0.82] = 0.82 # change 0.82 to the corresponing threshold in thres_list.
 
   data_idx = 8 # Predict the index of the g-code you want.
+  
+## Section 5 ##
+For the 95%-NCI of posterior common covariance. The file "MCMC_covariance_estimation.py" and "HPD.py" are attached under the folder called "Section 5: Case_study.zip". The running results will be like...
+
+![image](https://user-images.githubusercontent.com/105607708/168651711-422e97e7-2b02-4bb1-b140-4a34766af7c1.png)
+
+Autocorrelation
+![image](https://user-images.githubusercontent.com/105607708/168651752-342cc1a0-3680-4dab-8cba-8c14f1743396.png)
+
+### Note: Change combination of the g-codes for the co-learning in the code is allowalbe, but the user must manully change the following parameters as well. Such as...
+
 
 ## Section 6.1 ##
 
