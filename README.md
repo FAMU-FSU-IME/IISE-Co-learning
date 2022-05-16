@@ -69,7 +69,7 @@ The RMSE reduction (%) through the iteration as follows,
 ![image](https://user-images.githubusercontent.com/105607708/168660127-590b60fb-6da4-43af-9600-f6105e225517.png)
 
 
-### In between-printer learning comparison, the code must be adjusted manually when the training g-code changes. For exmaple:
+In between-printer learning comparison, the code must be adjusted manually when the training g-code changes. For exmaple:
 
  training_list = [0]       
  test_list = [3,5,6,8] 
@@ -79,7 +79,7 @@ The RMSE reduction (%) through the iteration as follows,
 
  training_list = [5]       
  test_list = [0,3,6,8] 
-###
+ 
 
 Based on code, we randomly picked a number of of g-code-combinations in a certain size compared with the results obtained from prior study (Transfer learning (Ren. et al 2021)). Also, "Ren_vs_proposed.py", are provided for presenting the results I attached in Fig. 7 (paper). The covariance estimation (def cov_cal) from the prior stduy also attached in "MCMC_covariance_estimation.py"
 
@@ -118,6 +118,13 @@ geneticalgorithm.py: outer optimization for the printer selection
 
 
 After saving the two EA files above, the MCMC_covariance_estimation and Simulated annealing are integrated as "SA_EA_and_EA_EA.py" to present the two-stage optimization for the search process of the co-learning problem. 
+
+
+By running SA_EA_and_EA_EA.py,  the resutls for one target g-code (ino120 (Taz 6)) in co-learning and validated by the rest of non-selected four g-codes in TABLE 1 (paper) from ino120 (Taz 6) will be generated. Users have to train one of samples from  [0, 3, 5, 6, 8] in ino120 (Taz 6) and validated by the rest of non-selected. Therefore, 20 RMSEs will be manually collected for the Hybrid-metaheuristic and EA only.
+
+![image](https://user-images.githubusercontent.com/105607708/168674147-591e552b-a3cd-4246-8ecc-e2d2599020c6.png)
+
+
 
 
 At the bottom of "SA_EA_and_EA_EA.py" are provided for presenting the results I attached in Fig. 9 (paper). Please see the code below the comment in the code
