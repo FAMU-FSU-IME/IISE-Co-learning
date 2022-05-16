@@ -30,7 +30,7 @@ Autocorrelation within 1000 lags
 ![image](https://user-images.githubusercontent.com/105607708/168652316-208be8b1-d52b-4e34-abc9-ed5a04c19ab7.png)
 
 
-### Note: Change combination of the g-codes for the co-learning in the code is allowalbe, but the user must manully change the following parameters as well. Such as...
+### Note: Change combination of g-codes for the co-learning in the code is allowalbe, but the user must manully change the following parameters as well. Such as...
 
 
 ## Section 6.1 ##
