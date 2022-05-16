@@ -79,11 +79,11 @@ test_list = [0,5,6,8]
 training_list = [5]       
 test_list = [0,3,6,8] 
 
-"Ren_vs_proposed.py", are provided for presenting the results I attached in Fig. 7 (paper).
+Based on code, we randomly picked a number of of g-code-combinations in a certain size compared with the results obtained from prior study (Transfer learning (Ren. et al 2021)). Also, "Ren_vs_proposed.py", are provided for presenting the results I attached in Fig. 7 (paper). The covariance estimation from the prior stduy also attached in "MCMC_covariance_estimation.py"
 
 ![image](https://user-images.githubusercontent.com/105607708/168661481-34143a3a-3541-4d40-9546-8c632ad5a30c.png)
 
-For this results, user needs to include the g-code only from xiao120(Taz 5: one-gcode contained only) and ino120 (Taz 6: depends on the varying size) 
+**For this results, user needs to include the g-code only from xiao120(Taz 5: one-gcode contained only) and ino120 (Taz 6: depends on the varying size) 
 
 
 ## Section 6.1 ##
