@@ -6,7 +6,7 @@ For the validation of the kinematics piecewise fucntion proposed by (Ren. et al 
 
 ![image](https://user-images.githubusercontent.com/105607708/168645847-e6ca692e-465c-4e8e-8e44-9c8cf2c755d9.png)
 
-### Note: Change different g-code in the code is allowalbe, but the user must manully change the following parameters as well. Such as...
+### Note: Change different g-code in the code is allowalbe, but the user must manully change the following parameters in the code as well. Such as...
 
 training_list = [0,1,2,3,4,5,6,7] # index of the training sampels, I selected 8 samples (0-7) for the training data, 8 for the prediction.
 
@@ -30,8 +30,9 @@ Autocorrelation within 1000 lags
 ![image](https://user-images.githubusercontent.com/105607708/168652316-208be8b1-d52b-4e34-abc9-ed5a04c19ab7.png)
 
 
-### Note: Change combination of g-codes for the co-learning in the code is allowalbe, but the user must manully change the following parameters as well. Such as...
+### Note: Change combination of g-codes for the co-learning in the code is allowalbe, but the user must manully change the following parameters in the code as well. Such as...
 
+##### Part 1: MCMC for covariance estimation #####
 In "MCMC_covariance_estimation.py", we have 26 differents g-codes from 4 printers example ,___ino120_1.csv (Taz6), xiao120.csv (Taz5), ___101ts.csv (Ender 1), ___101s.csv (Ender 2).
 
 Since the Taz 6 doesn't have p1, for the coding purpose, we manually created p1 for ___ino120.csv --> ___ino120_1.csv .
@@ -40,8 +41,13 @@ However, in the paper each printer we include only 5 g-codes from TABLE 1 (paper
 
 IISE paper conditions in Table 1 for each printer.
 
-xiao120 (Taz 5): 0, 3, ,5, 6, 8;  ino120 (Taz 6): 9, 11, 13, 14, 15; 101ts(Ender 1): 16, 17, 18, 19, 20; 101s(Ender 2): 21, 22, 23, 24, 25
+xiao120 (Taz 5): 0, 3,5, 6, 8;  ino120 (Taz 6): 9, 11, 13, 14, 15; 101ts(Ender 1): 16, 17, 18, 19, 20; 101s(Ender 2): 21, 22, 23, 24, 25
 
+In the code:
+
+sample_training_list = [0,9] # Choose the combination for g-codes from different printers. 
+
+##### Part 2: Simulated Annealing #####
 
 ## Section 6.1 ##
 
