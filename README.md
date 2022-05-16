@@ -88,7 +88,7 @@ Based on code, we randomly picked a number of of g-code-combinations in a certai
 
 ## Section 6.1 ##
 
-For the printer selection in Section 6.1, all the printers are consider as data-limited printers. That means each printer only contributes one single g-code for ino120 (Taz6) to co-learn with. Each training sample [0, 3, 5, 6, 8] in ino120 (Taz 6) will be trained indivually and validated by the rest. Therefore, 20 RMSEs will be manually collected for a certain combinations of printers (e,g., Taz 5 + Taz 6 + Ender 1).
+For the printer selection in Section 6.1, all the printers are consider as data-limited printers. That means each printer only contributes one single g-code for ino120 (Taz6) to co-learn with. Each training sample [0, 3, 5, 6, 8] in ino120 (Taz 6) will be trained indivually and validated by the rest. Therefore, 20 RMSEs will be manually collected for a certain combinations of printers (e,g., Taz 5 + Taz 6 + Ender 1). All the code adjustment wil be the same as mentioned in Section 5.
 
 Also, "printer_selection.py", are provided for presenting the results I attached in Fig. 8 (paper).
 
