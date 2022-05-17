@@ -123,7 +123,7 @@ After saving the two EA files above, the MCMC_covariance_estimation and Simulate
 By running "SA_EA_and_EA_EA.py",  the resutls for one target g-code (ino120 (Taz 6)) in co-learning and validated by the rest of non-selected four g-codes in TABLE 1 (paper) from ino120 (Taz 6) will be generated. Users have to train one of samples from  [0, 3, 5, 6, 8] in ino120 (Taz 6) and validated by the rest of non-selected. Therefore, 20 RMSEs will be manually collected for the Hybrid-metaheuristic and EA only for Fig. 9 (paper).
 
 
-### Note: Change different g-code in the code is allowalbe, but the user must manully change the following parameters in the code as well. Such as,
+### Note: Change the training sample in the code is allowalbe, but the user must manully change the following feed & acceleration based on the g-code condition in the code as well. Such as,
     load the line measurement data 9
     coords_9 = []
     width_9 = []
@@ -161,6 +161,7 @@ By running "SA_EA_and_EA_EA.py",  the resutls for one target g-code (ino120 (Taz
     .
   
     thres_list =  [0.76, 0.8, 0.80, 0.80,0.58,0.8, 0.75, 0.82, 0.8, 0.82, 0.6083,0.5954,0.7564,0.7435,0.8026,0.5674,0.5547,0.5463,0.5421,0.5453]
+    #thres_list[4] is the index of the training sample, the threshold of training sample thres_list[4] needs to be changed as well. The index (position) is always selected (flipped as 1) during the optimization process for the printer combination k.
 ###
 
 A single run of "SA_EA_and_EA_EA.py" will generate the results as follows,
