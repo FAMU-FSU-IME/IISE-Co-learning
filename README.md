@@ -123,8 +123,8 @@ After saving the two EA files above, the MCMC_covariance_estimation and Simulate
 By running "SA_EA_and_EA_EA.py",  the resutls for one target g-code (ino120 (Taz 6)) in co-learning and validated by the rest of non-selected four g-codes in TABLE 1 (paper) from ino120 (Taz 6) will be generated. Users have to train one of samples from  [0, 3, 5, 6, 8] in ino120 (Taz 6) and validated by the rest of non-selected. Therefore, 20 RMSEs will be manually collected for the Hybrid-metaheuristic and EA only for Fig. 9 (paper).
 
 
-### Note: Change different g-code in the code is allowalbe, but the user must manully change the following parameters in the code as well. Such as...
-  #load the line measurement data 9
+### Note: Change different g-code in the code is allowalbe, but the user must manully change the following parameters in the code as well. Such as,
+    load the line measurement data 9
   coords_9 = []
   width_9 = []
   with open('S800F9000_ino120_1.csv') as csvfile:
