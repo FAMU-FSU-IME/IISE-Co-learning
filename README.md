@@ -125,42 +125,42 @@ By running "SA_EA_and_EA_EA.py",  the resutls for one target g-code (ino120 (Taz
 
 ### Note: Change different g-code in the code is allowalbe, but the user must manully change the following parameters in the code as well. Such as,
     load the line measurement data 9
-  coords_9 = []
-  width_9 = []
-  with open('S800F9000_ino120_1.csv') as csvfile:
-      readCSV = csv.reader(csvfile, delimiter=',')
-      for row in readCSV:
-          coords_9.append(float(row[0]))
-          width_9.append(float(row[1]))
+    coords_9 = []
+    width_9 = []
+    with open('S800F9000_ino120_1.csv') as csvfile:
+        readCSV = csv.reader(csvfile, delimiter=',')
+        for row in readCSV:
+            coords_9.append(float(row[0]))
+            width_9.append(float(row[1]))
        
-  coords_9 = np.asarray(coords_9)
-  width_9 = np.asarray(width_9)
-  width_9_ave = np.mean(width_9[(coords_9>start_p)&(coords_9<stop_p)])
-  width_interp_9  =  np.interp(coords, coords_9 ,width_9)
-  #width_interp_9 = width_interp_9 - width_9_ave
-  a = 400
-  feed = 50
-  l_vector, v_9, a_vector_9, t_vector_9 = acc_ana(a, v0, v1, feed, jerk, l, stp)
-  data.append(np.transpose(np.array((coords, t_vector_9, v_9, a_vector_9, width_interp_9))))
+    coords_9 = np.asarray(coords_9)
+    width_9 = np.asarray(width_9)
+    width_9_ave = np.mean(width_9[(coords_9>start_p)&(coords_9<stop_p)])
+    width_interp_9  =  np.interp(coords, coords_9 ,width_9)
+    #width_interp_9 = width_interp_9 - width_9_ave
+    a = 400
+    feed = 50
+    l_vector, v_9, a_vector_9, t_vector_9 = acc_ana(a, v0, v1, feed, jerk, l, stp)
+    data.append(np.transpose(np.array((coords, t_vector_9, v_9, a_vector_9, width_interp_9))))
 
 
-  .
-  .
-  .
+    .
+    .
+    .
   
-  p1_idx = identify_breakpoints(coords, width_interp_9)
-  v = 150.00
-  a = 800.00
-  jerk = 8.00
-  #x = (np.square(v) - np.square(jerk))/a
-  x = v
-  bp_data = np.concatenate((bp_data, np.array([coords[p1_idx][0], t_vector_9[p1_idx][0], v, a, jerk, x, np.max(coords)],ndmin=2)))
+    p1_idx = identify_breakpoints(coords, width_interp_9)
+    v = 150.00
+    a = 800.00
+    jerk = 8.00
+    #x = (np.square(v) - np.square(jerk))/a
+    x = v
+    bp_data = np.concatenate((bp_data, np.array([coords[p1_idx][0], t_vector_9[p1_idx][0], v, a, jerk, x, np.max(coords)],ndmin=2)))
 
-  .
-  .
-  .
+    .
+    .
+    .
   
-  thres_list =  [0.76, 0.8, 0.80, 0.80,0.58,0.8, 0.75, 0.82, 0.8, 0.82, 0.6083,0.5954,0.7564,0.7435,0.8026,0.5674,0.5547,0.5463,0.5421,0.5453]
+    thres_list =  [0.76, 0.8, 0.80, 0.80,0.58,0.8, 0.75, 0.82, 0.8, 0.82, 0.6083,0.5954,0.7564,0.7435,0.8026,0.5674,0.5547,0.5463,0.5421,0.5453]
 ###
 
 A single run of "SA_EA_and_EA_EA.py" will generate the results as follows,
