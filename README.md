@@ -125,7 +125,7 @@ By running "SA_EA_and_EA_EA.py",  the resutls for one target g-code (ino120 (Taz
 
 A single run of "SA_EA_and_EA_EA.py" will generate the results as follows,
 
-![image](https://user-images.githubusercontent.com/105607708/168674147-591e552b-a3cd-4246-8ecc-e2d2599020c6.png)
+![image](https://user-images.githubusercontent.com/105607708/168724749-c46a30c7-aa16-4d19-82b4-1e153aef1529.png)
 
 Denotes sga = (EA+SA), gga = (EA+EA),
 
