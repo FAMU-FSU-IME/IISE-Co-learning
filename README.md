@@ -22,7 +22,7 @@ def forward_pred(ltva_va):
   
 
 ## Section 5 ##
-For the 95%-NCI of posterior common covariance. The file "MCMC_covariance_estimation.py" and "HPD.py" are attached under the folder called "Section 5: Case_study.zip". The running results will be like...
+For the 95%-NCI of posterior common covariance. The file "MCMC_covariance_estimation.py" and "HPD.py" are attached under the folder called "Section 5&6.1: Case_study.zip". The running results will be like...
 
 ![image](https://user-images.githubusercontent.com/105607708/168651711-422e97e7-2b02-4bb1-b140-4a34766af7c1.png)
 
@@ -99,7 +99,7 @@ Also, "printer_selection.py", are provided for presenting the results I attached
 
 ## Section 6.2 ##
 
-Based the getting the results in Section 6.2. Two files need to be saved first (1) geneticalgorithm.py (2) geneticalgorithm_inner.py. In this part, we used genetic algorithm for the example of Evolutionary algorithm. 
+Based the getting the results in Section 6.2. Two files need to be saved first (1) geneticalgorithm.py (2) geneticalgorithm_inner.py under the folder called "Section 6.2: Case_study.zip". In this part, we used genetic algorithm for the example of Evolutionary algorithm. 
 
 geneticalgorithm_inner: inner optimization for obataining the optimized covariance given a printer combination.
 
