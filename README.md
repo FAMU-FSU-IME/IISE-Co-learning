@@ -81,7 +81,7 @@ In between-printer learning comparison, the code must be adjusted manually when 
  test_list = [0,3,6,8] 
  
 
-Based on code, we randomly picked a number of of g-code-combinations in a certain size compared with the results obtained from prior study (Transfer learning (Ren. et al 2021)). Also, "Ren_vs_proposed.py", are provided for presenting the results I attached in Fig. 7 (paper). The covariance estimation (def cov_cal) from the prior stduy also attached in "MCMC_covariance_estimation.py"
+Based on code, we randomly picked a number of of g-code-combinations in a certain size compared with the results obtained from prior study (Transfer learning (Ren. et al 2021)). Also, "Ren_vs_proposed.py", are provided for presenting the results I attached in Fig. 6 (paper). The covariance estimation (def cov_cal) from the prior stduy also attached in "MCMC_covariance_estimation.py"
 
 ![image](https://user-images.githubusercontent.com/105607708/168661481-34143a3a-3541-4d40-9546-8c632ad5a30c.png)
 
@@ -92,7 +92,7 @@ Based on code, we randomly picked a number of of g-code-combinations in a certai
 
 For the printer selection in Section 6.1, all the printers are consider as data-limited printers. That means each printer only contributes one single g-code for ino120 (Taz6) to co-learn with. Each training sample [0, 3, 5, 6, 8] in ino120 (Taz 6) will be trained indivually and validated by the rest. Therefore, 20 RMSEs will be manually collected for a certain combinations of printers (e,g., Taz 5 + Taz 6 + Ender 1). All the code adjustment wil be the same as mentioned in Section 5.
 
-Also, "printer_selection.py", are provided for presenting the results I attached in Fig. 8 (paper).
+Also, "printer_selection.py", are provided for presenting the results I attached in Fig. 7 (paper).
 
 ![image](https://user-images.githubusercontent.com/105607708/168665077-d3d1053b-e335-49cb-b8bd-a61e7467bf8f.png)
 
@@ -120,7 +120,7 @@ geneticalgorithm.py: outer optimization for the printer selection
 After saving the two EA files above, the MCMC_covariance_estimation and Simulated annealing are integrated as "SA_EA_and_EA_EA.py" to present the two-stage optimization for the search process of the co-learning problem. 
 
 
-By running "SA_EA_and_EA_EA.py",  the resutls for one target g-code (ino120 (Taz 6)) in co-learning and validated by the rest of non-selected four g-codes in TABLE 1 (paper) from ino120 (Taz 6) will be generated. Users have to train one of samples from  [0, 3, 5, 6, 8] in ino120 (Taz 6) and validated by the rest of non-selected. Therefore, 20 RMSEs will be manually collected for the Hybrid-metaheuristic and EA only for Fig. 9 (paper).
+By running "SA_EA_and_EA_EA.py",  the resutls for one target g-code (ino120 (Taz 6)) in co-learning and validated by the rest of non-selected four g-codes in TABLE 1 (paper) from ino120 (Taz 6) will be generated. Users have to train one of samples from  [0, 3, 5, 6, 8] in ino120 (Taz 6) and validated by the rest of non-selected. Therefore, 20 RMSEs will be manually collected for the Hybrid-metaheuristic and EA only for Fig. 10 (paper).
 
 
 ### Note: Change the training sample in the code is allowalbe, but the user must manully change the following feed & acceleration based on the g-code condition in the code as well. Such as,
@@ -175,7 +175,7 @@ The results show the selected printer combionations (1: selected, 0: non-selecte
 #### Note: Please ignore the negative sign and treat the output of obj_func_gga & obj_func_sga as postive values ####
 
 
-At the bottom of "SA_EA_and_EA_EA.py" are provided for presenting the results I attached in Fig. 9 (paper). Please see the code below the comment in the code
+At the bottom of "SA_EA_and_EA_EA.py" are provided for presenting the results I attached in Fig. 10 (paper). Please see the code below the comment in the code
 
 ##==================================================
 
